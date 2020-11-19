@@ -11,7 +11,7 @@ export class ApiService {
   }
 
   sendOrder(order: string): void {
-    this.http.post<any>(`http://back:8080/add/order`, order).subscribe((data) => {
+    this.http.post<any>(`http://localhost:8080/add/order`, order).subscribe((data) => {
       console.log(data);
     });
   }
